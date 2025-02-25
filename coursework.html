@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="mystyle.css">
+    <style>
+        body {
+            font-family: Inter, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            padding: 10px 20px;
+        }
+        .logo {
+            height: 40px;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        li {
+            margin-left: 15px;
+        }
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        video {
+            width: 100%;
+            display: block;
+        }
+        .header-image {
+            width: auto; /* Maintain the aspect ratio */
+            height: 60px; /* 50% larger than the navigation logo (40px * 1.5 = 60px) */
+            margin: 20px 0; /* Adds spacing around the image */
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <!-- Make the logo clickable and link to index.html -->
+        <a href="index.html">
+            <img src="namelogo.png" alt="Logo" class="logo">
+        </a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="coursework.html">Course Work</a></li>
+            <li><a href="personal projects.html">Personal Projects</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- Place the image above the video -->
+    <img src="digitalmediaartist.png" alt="Digital Media Artist" class="header-image">
+
+    <!-- Wrap the video with an anchor tag to make it clickable -->
+    <a href="courseworkanimation.html">
+        <video autoplay muted>
+            <source src="courseworkanimation.mp4 " does not support the video tag.
+        </video>
+    </a>
+
+    <p>This is a paragraph.</p>
+</body>
+</html>
