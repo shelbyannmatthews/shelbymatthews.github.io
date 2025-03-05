@@ -9,6 +9,7 @@
             padding: 0;
             background-color: black;
             color: white;
+            text-align: center;
         }
         nav {
             display: flex;
@@ -36,44 +37,145 @@
             padding: 14px 16px;
             text-decoration: none;
         }
+        .header-image {
+            width: auto;
+            height: 60px;
+            margin: 20px 0;
+        }
+        .image-row {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .image-container {
+            width: 30%;
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+        }
+        .image-container a {
+            text-decoration: none;
+            color: white;
+        }
+        .image-container p {
+            margin-top: 5px;
+        }
         video {
             width: 100%;
             display: block;
-        }
-        .header-image {
-            width: auto; /* Maintain the aspect ratio */
-            height: 60px; /* 50% larger than the navigation logo (40px * 1.5 = 60px) */
-            margin: 20px 0; /* Adds spacing around the image */
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
+            margin: 20px 0;
         }
     </style>
 </head>
 <body>
     <nav>
-        <!-- Make the logo clickable and link to index.html -->
         <a href="index.html">
             <img src="namelogo.png" alt="Logo" class="logo">
         </a>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="coursework.html">Course Work</a></li>
-            <li><a href="personal projects.html">Personal Projects</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="index.html"><b>Home</b></a></li>
+            <li><a href="coursework.html"><b>Course Work</b></a></li>
+            <li><a href="personalprojects.html"><b>Personal Projects</b></a></li>
+            <li><a href="about.html"><b>About</b></a></li>
         </ul>
     </nav>
 
-    <!-- Place the image above the video -->
     <img src="digitalmediaartist.png" alt="Digital Media Artist" class="header-image">
 
-    <!-- Wrap the video with an anchor tag to make it clickable -->
     <a href="courseworkanimation.html">
         <video autoplay muted>
-            <source src="courseworkanimation.mp4 " does not support the video tag.
+            <source src="courseworkanimation.mov" type="video/mp4">
+            Your browser does not support the video tag.
         </video>
     </a>
 
-    <p>This is a paragraph.</p>
+    <h1><b>ART 74</b></h1>
+
+    <!-- Rows of images with clickable links -->
+    <div class="image-row">
+        <div class="image-container">
+            <a href="glitch.html">
+                <img src="mooncover.png" alt="Moon Cover">
+                <p>Lunar Corruption</p>
+            </a>
+        </div>
+        <div class="image-container">
+            <a href="minecraftart.html">
+                <img src="yodamodel.png" alt="Yoda Model">
+                <p>Resilient Figures</p>
+            </a>
+        </div>
+        <div class="image-container">
+            <a href="3Dprint.html">
+                <img src="yodaprint.jpg" alt="Yoda Model 3">
+                <p>Resilient Figures, 3D Printed</p>
+            </a>
+        </div>
+    </div>
+
+    <div class="image-row">
+        <div class="image-container">
+            <a href="p5js.html">
+                <img src="p5js.jpg" alt="P5JS">
+                <p>Self Portrait</p>
+            </a>
+        </div>
+        <div class="image-container">
+            <a href="bunnyproject.html">
+                <img src="bunnyproject.jpg" alt="Bunny Project">
+                <p>The Bunny Project</p>
+            </a>
+        </div>
+        <div class="image-container">
+            <a href="llamajump.html">
+                <img src="llamajump.jpg" alt="Llama Jump">
+                <p>Llama Jump</p>
+            </a>
+        </div>
+    </div>
+
+    <div class="image-row">
+        <div class="image-container">
+            <a href="grizzly.html">
+                <img src="grizzlycover.jpg" alt="Yoda Model 7">
+                <p>Grizzly Peak Blvd Montage</p>
+            </a>
+        </div>
+        <div class="image-container">
+            <a href="moosecarriage.html">
+                <img src="moosecarriage.jpg" alt="Yoda Model 8">
+                <p>Moose Carriage</p>
+            </a>
+        </div>
+        <div class="image-container">
+            <a href="mememashup.html">
+                <img src="mememashup.jpg" alt="Yoda Model 9">
+                <p>Hanging with the Gang</p>
+            </a>
+        </div>
+    </div>
+
+    <div class="image-row">
+        <div class="image-container">
+            <a href="glitch.html">
+                <img src="yodamodel.png" alt="Yoda Model 10">
+                <p>TITLE</p>
+            </a>
+        </div>
+        <div class="image-container">
+            <a href="glitch.html">
+                <img src="yodamodel.png" alt="Yoda Model 11">
+                <p>TITLE</p>
+            </a>
+        </div>
+        <div class="image-container">
+            <a href="glitch.html">
+                <img src="yodamodel.png" alt="Yoda Model 12">
+                <p>TITLE</p>
+            </a>
+        </div>
+    </div>
 </body>
 </html>
