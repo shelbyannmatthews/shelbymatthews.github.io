@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="mystyle.css">
+    <style>
+        body {
+            font-family: Inter, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        /* Background video container */
+        .video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        .video-container video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            object-fit: cover;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            padding: 10px 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .logo {
+            height: 40px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        li {
+            margin-left: 15px;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .content-container {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .content-box {
+            background-color: black;
+            border: 3px solid white;
+            padding: 40px;
+            max-width: 900px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+        }
+
+        .about-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            padding: 40px;
+        }
+
+        .about-container img {
+            width: 400px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .about-text {
+            max-width: 600px;
+            text-align: left;
+            line-height: 2;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Background Video -->
+    <div class="video-container">
+        <video autoplay loop muted>
+            <source src="dronefootage.mov" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <nav>
+        <a href="coursework.html">
+            <img src="namelogo.png" alt="Logo" class="logo">
+        </a>
+        <ul>
+            <li><a href="coursework.html"><b>Home</b></a></li>
+            <li><a href="about.html"><b>About</b></a></li>
+        </ul>
+    </nav>
+
+    <div class="content-container">
+        <div class="content-box">
+            <h1 class="header"><b>About</b></h1>
+            <h2>Shelby Matthews</h2>
+
+            <div class="about-container">
+                <img src="headshot.jpg" alt="Shelby Matthews">
+                <div class="about-text">
+                    <p>I’m Shelby Matthews, a creative born and raised in the East Bay Area.</p>
+                    <p>I grew up surrounded by nature and animals, which I integrate into my artwork whenever possible. As an artist, I explore the intersection of nature and technology through 3D, video, photography, illustration, and graphics, which is certainly an unexpected paradox. In today’s digital age, people often ignore the pull of nature, so I integrate it into my digital art to remind people of the beauty that exists outside of their screens.</p>
+                    <p>I view myself as a digital storyteller, collecting images and perspectives from around the world to integrate into my art. Throughout my travels, I capture moments through photography and video to further incorporate into digital experiences upon my return. This has led me to create projects like stamps, videos of landscapes, games, and more.</p>
+                    <p>My creative journey began in elementary school with KidPix, where I made my first pieces of digital art. My skills grew in middle school when my father brought me a CD-ROM of Adobe Photoshop from work. Since then, I’ve gained experience in all areas of the Adobe Creative Cloud, using these tools to bring my artistic visions to life. I am now pursuing a creative career at San Jose State University (SJSU), studying Digital Media Art. Outside of the classroom, I serve as an Adobe Campus Leader, as well as President of the Adobe Student Ambassador collective at SJSU. This summer, I’ll be in Los Angeles interning at Apple on the Video Apps Team, focusing on motion graphics and product design!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

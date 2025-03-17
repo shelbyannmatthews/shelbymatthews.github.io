@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="mystyle.css">
+    <style>
+        body {
+            font-family: Inter, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            padding: 10px 20px;
+        }
+        .logo {
+            height: 40px;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        li {
+            margin-left: 15px;
+        }
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .top-image {
+            width: 90%; /* Make the top image even bigger */
+            max-width: 900px; /* Increase the size of the top image */
+            height: auto;
+            margin: 40px auto 20px; /* Add extra space at the top and a smaller bottom margin */
+            display: block;
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 0; /* Remove any margin between the containers */
+            flex-wrap: wrap;
+        }
+        .image-container img {
+            width: 50%; /* Increase width of images */
+            max-width: 350px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .header-image {
+            width: auto;
+            height: 60px;
+            margin: 20px 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="coursework.html">
+            <img src="namelogo.png" alt="Logo" class="logo">
+        </a>
+        <ul>
+            <li><a href="coursework.html"><b>Home</b></a></li>
+            <li><a href="about.html"><b>About</b></a></li>
+        </ul>
+    </nav>
+    
+    <h1><b>Hanging with the Gang</b></h1>
+	<center><b>Photoshop</b></center>
+    <p>This piece is a meme mashup of Greta Thunberg, a prominent climate change activist, sharing a drink with the Lorax as she's traveling through the <br>Truffula Tree Forest. This image is to show a likely friendship between a person and a TV character.</p>
+
+    <!-- Top Image: Mememashup (Bigger size) -->
+    <img src="mememashup.jpg" alt="Mememashup" class="top-image">
+<p> Below are the images used to create the meme mashup above.</p>
+    <!-- Row 1: Lorax and Lorax Background -->
+    <div class="image-container">
+        <img src="lorax.png" alt="Lorax">
+        <img src="loraxbackground.png" alt="Lorax Background">
+    </div>
+    <!-- Row 2: Beer and Greta -->
+    <div class="image-container">
+        <img src="beer.png" alt="Beer">
+        <img src="greta.jpeg" alt="Greta">
+    </div>
+</body>
+</html>

@@ -62,70 +62,48 @@
         .image-container p {
             margin-top: 5px;
         }
-        video {
-            width: 100%;
+        .coursework-video {
+            width: 100%;  /* Full width */
+            height: auto;
+            max-width: 1200px;  /* Limits the size to prevent excessive stretching */
+            margin: 20px auto 80px auto;  /* Increased space below the video */
             display: block;
-            margin: 20px 0;
         }
     </style>
 </head>
 <body>
     <nav>
-        <a href="index.html">
+        <a href="coursework.html">
             <img src="namelogo.png" alt="Logo" class="logo">
         </a>
         <ul>
-            <li><a href="index.html"><b>Home</b></a></li>
-            <li><a href="coursework.html"><b>Course Work</b></a></li>
-            <li><a href="personalprojects.html"><b>Personal Projects</b></a></li>
+            <li><a href="coursework.html"><b>Home</b></a></li>
             <li><a href="about.html"><b>About</b></a></li>
         </ul>
     </nav>
 
     <img src="digitalmediaartist.png" alt="Digital Media Artist" class="header-image">
 
+    <!-- Replaced image with cover.mp4 video -->
     <a href="courseworkanimation.html">
-        <video autoplay muted>
-            <source src="courseworkanimation.mov" type="video/mp4">
+        <video class="coursework-video" autoplay muted playsinline>
+            <source src="cover.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </a>
 
-    <h1><b>ART 74</b></h1>
-
     <!-- Rows of images with clickable links -->
     <div class="image-row">
-        <div class="image-container">
-            <a href="glitch.html">
-                <img src="mooncover.png" alt="Moon Cover">
-                <p>Lunar Corruption</p>
-            </a>
-        </div>
-        <div class="image-container">
-            <a href="minecraftart.html">
-                <img src="yodamodel.png" alt="Yoda Model">
-                <p>Resilient Figures</p>
-            </a>
-        </div>
-        <div class="image-container">
-            <a href="3Dprint.html">
-                <img src="yodaprint.jpg" alt="Yoda Model 3">
-                <p>Resilient Figures, 3D Printed</p>
-            </a>
-        </div>
-    </div>
-
-    <div class="image-row">
-        <div class="image-container">
-            <a href="p5js.html">
-                <img src="p5js.jpg" alt="P5JS">
-                <p>Self Portrait</p>
-            </a>
-        </div>
         <div class="image-container">
             <a href="bunnyproject.html">
                 <img src="bunnyproject.jpg" alt="Bunny Project">
                 <p>The Bunny Project</p>
+            </a>
+        </div>
+        <div class="image-container">
+            <a href="moosecarriage.html">
+                <img src="moosecarriage.jpg" alt="Moose Carriage">
+                <p>Moose Carriage</p>
             </a>
         </div>
         <div class="image-container">
@@ -138,21 +116,21 @@
 
     <div class="image-row">
         <div class="image-container">
-            <a href="grizzly.html">
-                <img src="grizzlycover.jpg" alt="Yoda Model 7">
-                <p>Grizzly Peak Blvd Montage</p>
+            <a href="bearcreek.html">
+                <img src="bearcreekcover.png" alt="Bear Creek">
+                <p>Travelling Bear Creek Rd</p>
             </a>
         </div>
         <div class="image-container">
-            <a href="moosecarriage.html">
-                <img src="moosecarriage.jpg" alt="Yoda Model 8">
-                <p>Moose Carriage</p>
+            <a href="p5js.html">
+                <img src="p5js.jpg" alt="P5JS">
+                <p>Self Portrait</p>
             </a>
         </div>
         <div class="image-container">
-            <a href="mememashup.html">
-                <img src="mememashup.jpg" alt="Yoda Model 9">
-                <p>Hanging with the Gang</p>
+            <a href="miramar.html">
+                <img src="planecover.png" alt="USMC Stamps">
+                <p>USMC Stamps</p>
             </a>
         </div>
     </div>
@@ -160,20 +138,42 @@
     <div class="image-row">
         <div class="image-container">
             <a href="glitch.html">
-                <img src="yodamodel.png" alt="Yoda Model 10">
-                <p>TITLE</p>
+                <img src="mooncover.png" alt="Lunar Corruption">
+                <p>Lunar Corruption</p>
             </a>
         </div>
         <div class="image-container">
-            <a href="glitch.html">
-                <img src="yodamodel.png" alt="Yoda Model 11">
-                <p>TITLE</p>
+            <a href="grizzly.html">
+                <img src="grizzlycover.jpg" alt="Grizzly Peak Blvd Montage">
+                <p>Grizzly Peak Blvd Montage</p>
             </a>
         </div>
         <div class="image-container">
-            <a href="glitch.html">
-                <img src="yodamodel.png" alt="Yoda Model 12">
-                <p>TITLE</p>
+            <a href="minecraftart.html">
+                <img src="yodaprint.jpg" alt="Yoda Model">
+                <p>Resilient Figures</p>
+            </a>
+        </div>
+    </div>
+
+    <div class="image-row">
+        <div class="image-container">
+            <a href="mememashup.html">
+                <img src="mememashup.jpg" alt="Hanging with the Gang">
+                <p>Hanging with the Gang</p>
+            </a>
+        </div>
+        <div class="image-container">
+            <a href="playingcards.html">
+                <img src="playingcardscover.png" alt="Playing Cards">
+                <p>Mason Moose's Playing Cards</p>
+            </a>
+        </div>
+
+        <div class="image-container">
+            <a href="photography.html">
+                <img src="photography.png" alt="Photography">
+                <p>Digital & Film Photography</p>
             </a>
         </div>
     </div>

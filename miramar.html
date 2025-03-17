@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="mystyle.css">
+    <style>
+        body {
+            font-family: Inter, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            padding: 10px 20px;
+        }
+        .logo {
+            height: 40px;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        li {
+            margin-left: 15px;
+        }
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        video {
+            width: 100%;
+            display: block;
+        }
+        .header-image {
+            width: auto;
+            height: 60px;
+            margin: 20px 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .image-grid {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .image-row {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .image-row img {
+            width: 550px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="coursework.html">
+            <img src="namelogo.png" alt="Logo" class="logo">
+        </a>
+        <ul>
+            <li><a href="coursework.html"><b>Home</b></a></li>
+            <li><a href="about.html"><b>About</b></a></li>
+        </ul>
+    </nav>
+    
+    <h1><b>USMC Stamps</b></h1>
+    <h4>Photography, Adobe Illustrator, Adobe Photoshop</h4>
+    
+    <p>These USMC stamps were designed using original photos from the Marine Corps flight demonstration at the San Diego Miramar Airshow. <br>Each photo of the aircraft was masked in Photoshop and edited with texture and color to obtain the appearance of a stamp. The stamp shape <br> was created in Adobe Illustrator and then imported into Photoshop, where the aircraft images were integrated. All fonts, colors, <br>and logos align with the official Marine Corps brand guidelines.</p>
+    
+    <div class="image-grid">
+        <div class="image-row">
+            <img src="lightning1.png" alt="Lightning 1">
+            <img src="lightningphoto1.jpg" alt="Lightning Photo 1">
+        </div>
+        <div class="image-row">
+            <img src="raptor1.png" alt="Raptor 1">
+            <img src="raptorphoto1.jpg" alt="Raptor Photo 1">
+        </div>
+        <div class="image-row">
+            <img src="lightning2.png" alt="Lightning 2">
+            <img src="lightningphoto2.jpg" alt="Lightning Photo 2">
+        </div>
+        <div class="image-row">
+            <img src="raptor2.png" alt="Raptor 2">
+            <img src="raptorphoto2.jpg" alt="Raptor Photo 2">
+        </div>
+    </div>
+</body>
+</html>

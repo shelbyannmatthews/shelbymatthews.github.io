@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="mystyle.css">
+    <style>
+        body {
+            font-family: Inter, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            padding: 10px 20px;
+        }
+        .logo {
+            height: 40px;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        li {
+            margin-left: 15px;
+        }
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .top-image {
+            width: 90%; /* Make the top image even bigger */
+            max-width: 1300px; /* Further increase the size of the top image */
+            height: auto;
+            margin: 40px auto 20px; /* Add extra space at the top and a smaller bottom margin */
+            display: block;
+        }
+        .image-container {
+            display: flex;
+            justify-content: space-evenly; /* Ensure there's minimal space between images */
+            margin: 20px auto; /* Space between rows */
+            max-width: 1800px; /* Allow for wider images */
+            padding: 0; /* Remove padding */
+            width: 90%; /* Limit the width to 90% of the screen */
+        }
+        .image-container img {
+            height: 500px; /* Adjusted height to make images smaller */
+            width: 48%; /* Reduced width to make the gap smaller */
+            object-fit: contain; /* Maintain aspect ratio */
+            margin: 0; /* Ensure there's no margin */
+            padding: 0; /* Remove any padding */
+        }
+
+        /* For 3-image rows */
+        .image-container-three img {
+            width: 33%; /* Set each image to 33% of the container width */
+            height: auto; /* Maintain aspect ratio */
+            object-fit: cover; /* Ensure images are properly filled */
+            margin: 0; /* Remove margins */
+        }
+
+        /* For 4-image rows */
+        .image-container-four img {
+            width: 23%; /* Set each image to 23% of the container width */
+            height: auto; /* Maintain aspect ratio */
+            object-fit: cover; /* Ensure images are properly filled */
+            margin: 0; /* Remove margins */
+        }
+
+        .header-image {
+            width: auto;
+            height: 60px;
+            margin: 20px 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="coursework.html">
+            <img src="namelogo.png" alt="Logo" class="logo">
+        </a>
+        <ul>
+            <li><a href="coursework.html"><b>Home</b></a></li>
+            <li><a href="about.html"><b>About</b></a></li>
+        </ul>
+    </nav>
+    
+    <h1><b>Photography</b></h1>
+    <h2>Aviation, Digital 70-200mm f/2.8L</h2>
+
+    <!-- Row 1: Blue Angels Images -->
+    <div class="image-container">
+        <img src="blueangels1.jpg" alt="Blue Angels 1">
+        <img src="blueangels3.jpg" alt="Blue Angels 2">
+    </div>
+    
+    <!-- Row 2: More Blue Angels -->
+    <div class="image-container">
+        <img src="blueangels4.jpg" alt="Blue Angels 3">
+        <img src="blueangels2.jpg" alt="Blue Angels 4">
+    </div>
+
+    <!-- Row 3: Flight Images -->
+    <div class="image-container">
+        <img src="flight2.jpg" alt="Flight 1">
+        <img src="flight1.jpg" alt="Flight 2">
+    </div>
+    <h2>Wildlife, Digital 70-200mm f/2.8L + 24-105mm f/4L</h2>
+    <div class="image-container">
+        <img src="llamaphoto.jpg" alt="Blue Angels 1">
+        <img src="goat1.jpg" alt="Blue Angels 2">
+    </div>
+    
+    <!-- Row 2: More Blue Angels -->
+    <div class="image-container">
+        <img src="goat2.jpg" alt="Blue Angels 3">
+        <img src="squirrel.jpg" alt="Blue Angels 4">
+    </div>
+
+    <!-- Row 3: Flight Images -->
+    <div class="image-container">
+        <img src="peacock.jpg" alt="Flight 1">
+        <img src="turkey.jpg" alt="Flight 2">
+    </div>
+    <h2>Europe, Film 50mm f/1.4 S.S.C + 105mm f/3.5 S.C</h2>
+    <div class="image-container image-container-three">
+        <img src="castle.jpg" alt="Golden Gate Bridge">
+        <img src="clock.jpg" alt="Greenery">
+        <img src="church.jpg" alt="Triangle Building">
+    </div>
+    
+    <!-- Row 2: More Blue Angels -->
+    <div class="image-container">
+        <img src="horses2.jpg" alt="Blue Angels 3">
+        <img src="roof.jpg" alt="Blue Angels 4">
+    </div>
+
+    <!-- Row 3: Flight Images -->
+    <div class="image-container">
+        <img src="inns.jpg" alt="Flight 1">
+        <img src="bikes.jpg" alt="Flight 2">
+    </div>
+    <div class="image-container">
+        <img src="village.jpg" alt="Flight 1">
+        <img src="church2.jpg" alt="Flight 2">
+    </div>
+    
+    <h2>San Francisco, Film 50mm f/1.4 S.S.C + 105mm f/3.5 S.C</h2>
+    <div class="image-container image-container-three">
+        <img src="ggbridge.jpg" alt="Golden Gate Bridge">
+        <img src="green.jpg" alt="Greenery">
+        <img src="triangle.jpg" alt="Triangle Building">
+    </div>
+</body>
+</html>

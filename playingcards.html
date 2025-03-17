@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="mystyle.css">
+    <style>
+        body {
+            font-family: Inter, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            padding: 10px 20px;
+        }
+        .logo {
+            height: 40px;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        li {
+            margin-left: 15px;
+        }
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .top-image {
+            width: 90%; /* Make the top image even bigger */
+            max-width: 1300px; /* Further increase the size of the top image */
+            height: auto;
+            margin: 40px auto 20px; /* Add extra space at the top and a smaller bottom margin */
+            display: block;
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 0 auto; /* Add space between rows */
+            flex-wrap: wrap;
+            max-width: 1800px; /* Allow for even more width to accommodate larger images */
+        }
+        .image-container img {
+            height: 600px; /* Further increased height */
+            width: auto; /* Maintain aspect ratio */
+            object-fit: contain; /* Ensure images maintain their aspect ratio */
+            margin-bottom: 20px;
+        }
+        .header-image {
+            width: auto;
+            height: 60px;
+            margin: 20px 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="coursework.html">
+            <img src="namelogo.png" alt="Logo" class="logo">
+        </a>
+        <ul>
+            <li><a href="coursework.html"><b>Home</b></a></li>
+            <li><a href="about.html"><b>About</b></a></li>
+        </ul>
+    </nav>
+    
+    <h1><b>Mason Moose's Playing Cards</b></h1>
+    <center><b>Illustrator & Dimension</b></center>
+    <p>Mason Moose's Playing Cards is a conceptual project I created to get children interested in playing physical games again. So many <br>children are too involved with video games, so I wanted to bring back something more hands-on. The game set includes a standard deck, Go Fish,<br> and a memory game to help young children connect with others and and have fun with animals.</p>
+
+    <!-- Top Image: Mememashup (Bigger size) -->
+    <img src="playingcardshead.png" alt="Mememashup" class="top-image">
+    <p>All of these illustrations were completed on Adobe Illustrator and imported to Adobe Dimension to create a realistic mockup of the product.</p>
+
+    <!-- Row 1: Moose and Drawing -->
+    <div class="image-container">
+        <img src="moosefinal.png" alt="Moose Final">
+        <img src="moosedrawing.png" alt="Moose Drawing">
+    </div>
+    
+    <!-- Row 2: Beer and Drawing -->
+    <div class="image-container">
+        <img src="bearfinal.png" alt="Bear Final">
+        <img src="beardrawing.png" alt="Bear Drawing">
+    </div>
+
+    <!-- Row 3: Monkey and Drawing -->
+    <div class="image-container">
+        <img src="monkeyfinal.png" alt="Monkey Final">
+        <img src="monkeydrawing.png" alt="Monkey Drawing">
+    </div>
+</body>
+</html>

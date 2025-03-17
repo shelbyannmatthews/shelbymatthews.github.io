@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="mystyle.css">
+    <style>
+        body {
+            font-family: Inter, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            padding: 10px 20px;
+        }
+        .logo {
+            height: 40px;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        li {
+            margin-left: 15px;
+        }
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        video {
+            width: 60%;
+            display: block;
+            margin: 20px auto;
+        }
+        .header-image {
+            width: auto;
+            height: 60px;
+            margin: 20px 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .image-container img {
+            width: 550px;
+            height: auto;
+        }
+        .moon-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Align at the top */
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .moon-container img:first-child {
+            width: auto; /* Keeps original width */
+            height: auto; /* Keeps original height */
+            max-height: 550px; /* Limits size but maintains ratio */
+        }
+        .moon-container img:last-child {
+            height: 550px; /* Matches height of moosedev1.png */
+            width: auto; /* Keeps original aspect ratio */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="coursework.html">
+            <img src="namelogo.png" alt="Logo" class="logo">
+        </a>
+        <ul>
+            <li><a href="coursework.html"><b>Home</b></a></li>
+            <li><a href="about.html"><b>About</b></a></li>
+        </ul>
+    </nav>
+
+    <h1><b>Travelling Through Bear Creek</b></h1>
+    <h4>Illustrator & After Effects Animation</h4>
+
+    <p>After successfully animating "Moose Carriage", a better developed storyline was in order. "Bear Creek" tells the story of Mason Moose visiting<br> Bear Creek Rd, about to park his carriage. However, he hates rain and a storm is settling in. Mason decides to leave his carriage and travel in all new directions,<br> avoiding the rain. He eventually makes it back to his carriage and accidentally crashes into it.</p>
+
+    <a href="courseworkanimation.html">
+        <video controls>
+            <source src="bearcreekvideo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </a>
+
+    <p>Nearly every animated scene in "Bear Creek" is illustrated in Adobe Illustrator. The scenes with 4k video were taken from a personal drone.<br> This movie is inspired by Mark Ryden's children's aesthetics and Wes Anderson's cinematic talents. Inspiration from their works shows <br>in the limited color palettes, camera work, and perspectives.</p>
+
+    <!-- Added moosedev images below the last text -->
+    <div class="moon-container">
+        <img src="moosedev1.png" alt="Moose Development 1">
+        <img src="moosedev2.png" alt="Moose Development 2">
+    </div>
+</body>
+</html>
