@@ -13,27 +13,18 @@
             overflow-x: hidden;
         }
 
-        /* Background video container */
+        /* Background image container */
         .video-container {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            overflow: hidden;
+            background-image: url('sunset.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
             z-index: -1;
-        }
-
-        .video-container video {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            min-width: 100%;
-            min-height: 100%;
-            width: auto;
-            height: auto;
-            object-fit: cover;
         }
 
         nav {
@@ -112,13 +103,8 @@
 </head>
 <body>
 
-    <!-- Background Video -->
-    <div class="video-container">
-        <video autoplay loop muted>
-            <source src="dronefootage.mov" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
+    <!-- Background Image -->
+    <div class="video-container"></div>
 
     <nav>
         <a href="coursework.html">
